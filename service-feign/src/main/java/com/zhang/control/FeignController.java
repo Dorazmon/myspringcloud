@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FeignController {
   @Autowired
-  IFeignCall FeignCallImpl;
+  private IFeignCall FeignCallImpl;
   @GetMapping(value = "/hi")
   public String sayHi(@RequestParam String name) {
     return FeignCallImpl.sayHiFromClientOne( name );

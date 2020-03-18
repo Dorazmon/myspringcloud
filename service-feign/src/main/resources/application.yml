@@ -7,3 +7,8 @@ server:
 spring:
   application:
     name: service-feign
+
+#熔断器
+feign:
+  hystrix:
+   enabled: true
