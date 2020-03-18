@@ -12,7 +12,7 @@ public class FeignController {
   private IFeignCall FeignCallImpl;
   @GetMapping(value = "/hi")
   public String sayHi(@RequestParam String name) {
-    return FeignCallImpl.sayHiFromClientOne( name );
+    return FeignCallImpl.sayHiFromClientOne( name )+"---feign调用的";
   }
 
 }

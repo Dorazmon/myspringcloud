@@ -12,7 +12,7 @@ public class HelloService implements IHelloService{
 
   @HystrixCommand(fallbackMethod = "hiError")
   public String hiService(String name) {
-    return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class);
+    return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class)+"---ribbbon调用的";
   }
 
   public String hiError(String name) {
