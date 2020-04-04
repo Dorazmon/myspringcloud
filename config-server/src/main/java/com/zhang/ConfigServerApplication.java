@@ -12,6 +12,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 public class ConfigServerApplication {
 
   public static void main(String[] args) {
+    //测试
     SpringApplication.run(ConfigServerApplication.class, args);
   }
 }
