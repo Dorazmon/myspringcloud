@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: service-hi
+  profiles:
+    active: dev
 
 eureka:
   client:
