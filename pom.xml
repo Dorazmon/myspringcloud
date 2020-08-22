@@ -24,6 +24,7 @@
     <module>config-server</module>
     <module>config-client</module>
     <module>service-security</module>
+      <module>service-quartz</module>
   </modules>
 
   <properties>
